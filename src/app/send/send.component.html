@@ -1,0 +1,32 @@
+
+<div class="formcontainer"></div>
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+    
+
+    <div class="forminput">
+    <input type="number" ngModel placeholder="Enter userId" name="userId" >
+    <input type="number" ngModel placeholder="Enter I" name="I" >
+    <input type="text" ngModel placeholder="Enter title" name="title" >
+    <input type="text" ngModel placeholder="Enter Body" name="Body" >
+    <button>Send</button>
+        
+    </div>   
+    <!--    userId:number,
+    I:number,
+    title:string,
+    Body:string -->
+
+</form>
+<br>
+<br>
+<br>
+<br>
+<div class="fetchdata">
+<button (click)="getDataFromFirebase()">Get data from database</button>
+</div>
+<div   *ngFor="let temp of firebaseData">
+    <li>{{temp.userId}} :  {{temp.title}} </li><br>
+   
+</div>
+
+<app-delete></app-delete>

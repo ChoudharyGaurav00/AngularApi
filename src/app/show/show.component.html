@@ -1,0 +1,10 @@
+
+<div>
+    <button (click)="hitAPI()">Hit API</button>
+    <button (click)="clearAPI()">Clear API</button>
+
+</div>
+<div *ngFor="let temp of dataRec">
+<li>{{temp.userId}} :  {{temp.title}}</li>
+
+</div>
