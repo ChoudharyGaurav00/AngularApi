@@ -28,6 +28,8 @@ public tempres:Object={};
 public tempobjinf:objInf={} as objInf;
 public firebaseDataObj:Object[]=[];
   getDataFromFirebase(){
+    this.firebaseData=[];
+    this.firebaseDataObj=[];
     this.apidataservice.getApiData(this.url)
 
     .pipe(map((res)=>{

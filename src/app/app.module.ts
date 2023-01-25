@@ -9,12 +9,14 @@ import { ApidataService } from './apidata.service';
 import { SendComponent } from './send/send.component';
 import { FormsModule } from '@angular/forms';
 import { DeleteComponent } from './delete/delete.component';
+import { UpdateComponent } from './update/update.component';
 @NgModule({
   declarations: [
     AppComponent,
     ShowComponent,
     SendComponent,
-    DeleteComponent
+    DeleteComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
